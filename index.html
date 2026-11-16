@@ -7,7 +7,7 @@
 <meta property="og:title" content="Giftify · Regalos que sorprenden"><meta property="og:description" content="Juguetes originales de USA 🇺🇸 | Envíos a toda Costa Rica 🇨🇷"><meta property="og:image" content="img/logo_circle.png">
 <link rel="icon" href="img/logo_circle.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="img/opt/banner-720.webp" imagesrcset="img/opt/banner-720.webp 720w, img/opt/banner-960.webp 960w, img/banner.webp 1260w" imagesizes="(max-width:480px) 92vw, 440px" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="img/opt/portada-768.webp" imagesrcset="img/opt/portada-768.webp 768w, img/opt/portada-1080.webp 1080w, img/opt/portada-1536.webp 1536w" imagesizes="(max-width:480px) 92vw, 440px" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0f2f52;--navy2:#1d4f80;--blue:#2f8fd6;--cel:#bfe6fb;--cel2:#e6f5ff;--muted:#5d7f9f;--gold:#ffc94d;
@@ -18,17 +18,18 @@ body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,s
  background:radial-gradient(120% 55% at 50% 0%,#fff 0%,rgba(255,255,255,0) 60%),linear-gradient(180deg,#eef9ff 0%,#dcf1fd 50%,#c9e9fb 100%);
  overflow-x:hidden;position:relative;-webkit-font-smoothing:antialiased}
 a{-webkit-tap-highlight-color:transparent}
-.wrap{max-width:460px;margin:0 auto;padding:var(--s4) 18px 0;position:relative;z-index:2}
+.wrap{max-width:460px;margin:0 auto;padding:18px 18px 0;position:relative;z-index:2}
 .ico{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .bub{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#eef8ff,#d3ecfc);color:var(--blue);flex:none}
 /* header */
 header{text-align:center;position:relative}
-.logo-w{position:relative;width:88px;margin:0 auto}
-.logo{width:88px;height:88px;border-radius:50%;display:block;border:4px solid #fff;box-shadow:0 6px 20px rgba(47,143,214,.22)}
+.brand{display:flex;align-items:center;justify-content:center;gap:10px}
+.logo-w{position:relative;flex:none}
+.logo{width:44px;height:44px;border-radius:50%;display:block;border:2.5px solid #fff;box-shadow:0 4px 12px rgba(47,143,214,.25)}
 .spk{position:absolute;color:var(--gold);width:14px;height:14px;fill:currentColor;animation:tw 2.8s ease-in-out infinite}
 .spk.b{color:#7cc6f3}
-h1{font-weight:800;font-size:30px;letter-spacing:-.6px;margin-top:10px;line-height:1.1}
-.tag{font-weight:600;font-size:15px;color:var(--navy2);margin-top:6px;line-height:1.4}
+h1{font-weight:800;font-size:28px;letter-spacing:-.6px;line-height:1}
+.tag{font-weight:600;font-size:15px;color:var(--navy2);margin-top:8px;line-height:1.4}
 .tag span,.sub span{white-space:nowrap}
 .sub{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:2px 6px;margin-top:var(--s2);padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.8);
  border:1px solid rgba(47,143,214,.14);font-size:12.5px;font-weight:700;color:var(--navy2);line-height:1.35;box-shadow:0 2px 8px rgba(15,47,82,.04)}
@@ -36,7 +37,7 @@ h1{font-weight:800;font-size:30px;letter-spacing:-.6px;margin-top:10px;line-heig
 @media(max-width:440px){.sub{flex-direction:column;border-radius:16px;padding:7px 16px}.sub i{display:none}}
 /* hero */
 .hero-w{position:relative;margin-top:var(--s3)}
-.hero{border-radius:24px;overflow:hidden;line-height:0;background:#7cc6f3;box-shadow:0 10px 30px rgba(47,143,214,.22);aspect-ratio:1260/960;position:relative}
+.hero{border-radius:24px;overflow:hidden;line-height:0;background:#7cc6f3;box-shadow:0 10px 30px rgba(47,143,214,.22);aspect-ratio:1536/1024;position:relative}
 .hero img{display:block;width:100%;height:100%;object-fit:cover}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.28) 50%,transparent 65%);transform:translateX(-120%);animation:sweep 6s ease-in-out 1.6s infinite;pointer-events:none}
 .hero-w .spk{width:20px;height:20px;z-index:3}
@@ -59,11 +60,6 @@ h1{font-weight:800;font-size:30px;letter-spacing:-.6px;margin-top:10px;line-heig
 .social{display:flex;justify-content:center;gap:14px;margin-top:var(--s3)}
 .social a{width:48px;height:48px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:var(--sh);border:1px solid rgba(47,143,214,.12);color:var(--navy2);transition:transform .15s}
 .social svg{width:20px;height:20px;fill:currentColor}
-/* perks */
-.perks{margin-top:var(--s4);display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s1)}
-.perk{background:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.95);border-radius:18px;padding:var(--s2) 6px;text-align:center;font-size:12px;font-weight:700;color:var(--navy2);line-height:1.25;box-shadow:0 2px 10px rgba(15,47,82,.04)}
-.perk .bub{width:38px;height:38px;border-radius:50%;margin:0 auto 7px}
-.perk .ico{width:19px;height:19px}
 /* section titles */
 .st{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy2);margin:var(--s5) 0 var(--s2)}
 .st::before,.st::after{content:"";height:1px;width:34px;background:linear-gradient(90deg,transparent,rgba(47,143,214,.45))}
@@ -131,47 +127,40 @@ footer p{font-size:12.5px;font-weight:600;margin-top:12px;opacity:.85}
 <img class="side" loading="lazy" src="img/opt/crunchinator-lg.webp" alt="" style="width:290px;right:12%;top:470px;rotate:-5deg;animation-delay:-1s">
 <div class="wrap">
 <header>
- <div class="logo-w rv">
-  <img class="logo" src="img/logo_circle.png" width="88" height="88" alt="Logo de Giftify">
-  <svg class="spk" style="top:-2px;right:-14px"><use href="#i-spk"/></svg>
-  <svg class="spk b" style="bottom:6px;left:-16px;width:10px;height:10px;animation-delay:-1.3s"><use href="#i-spk"/></svg>
+ <div class="brand rv">
+  <span class="logo-w"><img class="logo" src="img/logo_circle.png" width="44" height="44" alt="">
+   <svg class="spk" style="top:-6px;right:-8px;width:11px;height:11px"><use href="#i-spk"/></svg></span>
+  <h1>Giftify</h1>
  </div>
- <h1 class="rv" style="--d:1">Giftify</h1>
- <p class="tag rv" style="--d:2"><span>Regalos que sorprenden.</span> <span>Diversión que enamora. 🎁</span></p>
- <p class="sub rv" style="--d:3"><span>Juguetes originales de USA 🇺🇸</span><i>|</i><span>Envíos a toda Costa Rica 🇨🇷</span></p>
+ <p class="tag rv" style="--d:1"><span>Regalos que sorprenden.</span> <span>Diversión que enamora. 🎁</span></p>
+ <p class="sub rv" style="--d:1"><span>Juguetes originales de USA 🇺🇸</span><i>|</i><span>Envíos a toda Costa Rica 🇨🇷</span></p>
 </header>
 
-<div class="hero-w rv" style="--d:4">
- <section class="hero" aria-label="Novedades">
-  <h2 class="sr-only">¡Diversión nivel WOW!</h2>
-  <img src="img/opt/banner-720.webp" srcset="img/opt/banner-720.webp 720w, img/opt/banner-960.webp 960w, img/banner.webp 1260w" sizes="(max-width:480px) 92vw, 440px" width="1260" height="960" fetchpriority="high" decoding="async" alt="¡Diversión nivel WOW! En tendencia: cámara instantánea, LEGO Pokémon Pikachu y CrunchLabs Crunchinator">
+<div class="hero-w rv" style="--d:2">
+ <section class="hero" aria-label="Portada">
+  <picture>
+   <source type="image/webp" srcset="img/opt/portada-768.webp 768w, img/opt/portada-1080.webp 1080w, img/opt/portada-1536.webp 1536w" sizes="(max-width:480px) 92vw, 440px">
+   <img src="img/portada.png" width="1536" height="1024" fetchpriority="high" decoding="async" alt="Giftify: juguetes novedosos y en tendencia. Envíos a todo el país. Gui Gui Mega Slime Haul, Otamatone, MrBeast Lab, cámara instantánea rosada y CrunchLabs. Juguetes WOW, productos únicos, calidad de USA y envíos a todo el país.">
+  </picture>
  </section>
- <svg class="spk" style="top:-9px;left:-6px"><use href="#i-spk"/></svg>
- <svg class="spk b" style="top:30px;right:-8px;width:14px;height:14px;animation-delay:-.9s"><use href="#i-spk"/></svg>
- <svg class="spk" style="bottom:-8px;right:28px;width:16px;height:16px;animation-delay:-1.8s"><use href="#i-spk"/></svg>
- <svg class="spk b" style="bottom:40px;left:-9px;width:12px;height:12px;animation-delay:-2.3s"><use href="#i-spk"/></svg>
+ <svg class="spk" style="top:-12px;left:-10px"><use href="#i-spk"/></svg>
+ <svg class="spk b" style="bottom:-12px;right:-8px;width:14px;height:14px;animation-delay:-1.4s"><use href="#i-spk"/></svg>
 </div>
 
-<nav class="cta rv" style="--d:5" aria-label="Acciones principales">
+<nav class="cta rv" style="--d:3" aria-label="Acciones principales">
  <a class="pri" href="https://wa.me/c/50662447946"><span>🛍️ Explora nuestro catálogo</span><i class="go"><svg class="ico"><use href="#i-go"/></svg></i></a>
  <a class="sec" href="https://wa.me/50662447946?text=%C2%A1Hola%20Giftify!%20%F0%9F%8E%81%20Quiero%20informaci%C3%B3n%20de%20un%20juguete"><span>💬 Haz tu pedido por WhatsApp</span><i class="go"><svg class="ico"><use href="#i-go"/></svg></i></a>
  <p class="trust"><svg class="ico"><use href="#i-heart"/></svg>Te atendemos personalmente por WhatsApp</p>
 </nav>
 
-<nav class="social rv" style="--d:6" aria-label="Redes sociales">
+<nav class="social rv" style="--d:4" aria-label="Redes sociales">
  <a href="https://www.instagram.com/giftify.cr/" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
  <a href="https://www.facebook.com/profile.php?id=61551996533271" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
  <a href="https://www.tiktok.com/@giftify.cr" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
 </nav>
 
-<section class="perks rv" style="--d:7" aria-label="Beneficios">
- <div class="perk"><div class="bub"><svg class="ico"><use href="#i-check"/></svg></div>Productos<br>originales</div>
- <div class="perk"><div class="bub"><svg class="ico"><use href="#i-truck"/></svg></div>Envíos<br>nacionales</div>
- <div class="perk"><div class="bub"><svg class="ico"><use href="#i-heart"/></svg></div>Atención<br>personalizada</div>
-</section>
-
-<h3 class="st rv" style="--d:8">Explorá por categoría</h3>
-<section class="grid rv" style="--d:8">
+<h3 class="st rv" style="--d:5">Explorá por categoría</h3>
+<section class="grid rv" style="--d:5">
  <a class="cat" href="https://giftifycr.com/search?q=lego&type=product"><div class="ph"><img loading="lazy" src="img/opt/lego_gameboy.webp" alt=""></div><span>LEGO</span></a>
  <a class="cat" href="https://giftifycr.com/search?q=crunchlabs&type=product"><div class="ph"><img loading="lazy" src="img/opt/crunchinator.webp" alt=""></div><span>Ciencia y STEM</span></a>
  <a class="cat" href="https://giftifycr.com/search?q=c%C3%A1mara&type=product"><div class="ph"><img loading="lazy" src="img/opt/camara_instantanea_rosada.webp" alt=""></div><span>Cámaras</span></a>
