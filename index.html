@@ -15,17 +15,13 @@ body{font-family:Nunito,system-ui,sans-serif;color:var(--navy);min-height:100vh;
 header{text-align:center}
 .logo{width:116px;height:116px;border-radius:50%;background:url(img/logo_circle.png) center/cover;margin:0 auto;border:5px solid #fff;box-shadow:0 10px 30px rgba(47,143,214,.35)}
 h1{font-weight:900;font-size:32px;margin-top:12px;letter-spacing:.2px}
-.tag{font-weight:700;font-size:15.5px;color:#2b6a9c;margin-top:2px}
+.tag{font-weight:700;font-size:15.5px;color:#2b6a9c;margin-top:4px;line-height:1.45}
 .social{display:flex;justify-content:center;gap:12px;margin-top:16px}
 .social a{width:44px;height:44px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 4px 12px rgba(47,143,214,.22)}
 .social svg{width:22px;height:22px;fill:var(--blue)}
-.hero{margin-top:22px;border-radius:24px;overflow:hidden;position:relative;height:224px;
- background:radial-gradient(circle at 50% 62%,#fff 0,rgba(255,255,255,.0) 55%),linear-gradient(160deg,#c9ecff,#7cc6f3);box-shadow:0 10px 26px rgba(47,143,214,.25)}
-.hero .tx{position:absolute;left:18px;top:16px;z-index:3}
-.hero .ey{font-size:11.5px;font-weight:900;letter-spacing:2px;color:var(--blue)}
-.hero h2{font-size:22px;font-weight:900;line-height:1.1;margin-top:3px}
-.hero img{position:absolute;filter:drop-shadow(0 0 14px rgba(255,255,255,.95)) drop-shadow(0 8px 10px rgba(18,57,94,.25))}
-.hero .wave{position:absolute;left:0;bottom:0;width:100%;height:34px;z-index:4;pointer-events:none}
+.hero{margin-top:22px;border-radius:24px;overflow:hidden;line-height:0;background:#7cc6f3;box-shadow:0 10px 26px rgba(47,143,214,.25)}
+.hero img{display:block;width:100%;height:auto;position:static;filter:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .links{margin-top:20px;display:flex;flex-direction:column;gap:11px}
 .btn{display:flex;align-items:center;gap:13px;background:#fff;border-radius:18px;padding:9px 14px 9px 9px;text-decoration:none;color:var(--navy);box-shadow:0 5px 16px rgba(47,143,214,.18);transition:transform .15s}
 .btn:active{transform:scale(.98)}
@@ -67,7 +63,7 @@ footer p{font-size:13px;font-weight:700;margin-top:8px;opacity:.95}
 <header>
  <div class="logo" role="img" aria-label="Logo de Giftify"></div>
  <h1>Giftify</h1>
- <p class="tag">Juguetes en tendencia para regalar 🎁<br>Envíos a todo Costa Rica 🇨🇷</p>
+ <p class="tag">Juguetes novedosos y en tendencia 🎁<br>Envíos a todo el país 🇨🇷</p>
  <nav class="social">
   <a href="https://wa.me/50662447946" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg></a>
   <a href="https://www.instagram.com/giftify.cr/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a>
@@ -77,12 +73,8 @@ footer p{font-size:13px;font-weight:700;margin-top:8px;opacity:.95}
 </header>
 
 <section class="hero" aria-label="Novedades">
- <div class="tx"><div class="ey">EN TENDENCIA</div><h2>¡Diversión<br>nivel WOW!</h2></div>
- <img src="img/lego_pokemon_pikachu.webp" alt="LEGO Pokémon Pikachu" style="width:148px;right:2px;top:60px;z-index:2">
- <img src="img/camara_hero.webp" alt="Cámara instantánea" style="width:118px;right:132px;top:76px;z-index:3;transform:rotate(5deg)">
- <img src="img/slime_prank_lab.webp" alt="CrunchLabs Slime Prank Lab" style="width:108px;left:44px;top:98px;z-index:1;transform:rotate(-3deg)">
- <img src="img/otamatone_verde.webp" alt="Otamatone" style="width:58px;left:16px;top:88px;z-index:2;transform:rotate(-12deg)">
- <svg class="wave" viewBox="0 0 400 34" preserveAspectRatio="none"><path d="M0 16 C70 2 130 30 200 16 S330 2 400 16 V34 H0Z" fill="#3a9be0"/></svg>
+ <h2 class="sr-only">¡Diversión nivel WOW!</h2>
+ <img src="img/banner.webp" width="1260" height="960" alt="¡Diversión nivel WOW! En tendencia: cámara instantánea, LEGO Pokémon Pikachu y CrunchLabs Crunchinator">
 </section>
 
 <main class="links">
