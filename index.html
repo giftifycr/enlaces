@@ -1,112 +1,144 @@
 <!doctype html>
 <html lang="es-CR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Giftify · Enlaces</title>
-<meta name="description" content="Giftify: juguetes en tendencia para regalar. Tienda online, catálogo y pedidos por WhatsApp, envíos a todo Costa Rica.">
-<meta property="og:title" content="Giftify"><meta property="og:image" content="img/logo_circle.png">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Giftify · Regalos que sorprenden</title>
+<meta name="description" content="Giftify: regalos que sorprenden, diversión que enamora. Juguetes originales de USA con envíos a toda Costa Rica. Catálogo y pedidos por WhatsApp.">
+<meta name="theme-color" content="#eaf7ff">
+<meta property="og:title" content="Giftify · Regalos que sorprenden"><meta property="og:description" content="Juguetes originales de USA 🇺🇸 | Envíos a toda Costa Rica 🇨🇷"><meta property="og:image" content="img/logo_circle.png">
 <link rel="icon" href="img/logo_circle.png">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/opt/banner-720.webp" imagesrcset="img/opt/banner-720.webp 720w, img/opt/banner-960.webp 960w, img/banner.webp 1260w" imagesizes="(max-width:480px) 92vw, 440px" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#12395e;--blue:#2f8fd6;--cel:#8fd3fb;--soft:#e8f7ff}
+:root{--navy:#0f2f52;--navy2:#1d4f80;--blue:#2f8fd6;--cel:#bfe6fb;--cel2:#e9f7ff;--muted:#5d7f9f;
+ --sh:0 1px 2px rgba(15,47,82,.05),0 6px 18px rgba(15,47,82,.07);--r:20px}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Nunito,system-ui,sans-serif;color:var(--navy);min-height:100vh;
- background:radial-gradient(circle at 50% 28%,rgba(255,255,255,.75),rgba(255,255,255,0) 45%),linear-gradient(180deg,#e8f7ff 0%,#b8e3fb 55%,#80c8f2 100%);overflow-x:hidden;position:relative}
-.wrap{max-width:460px;margin:0 auto;padding:34px 18px 0;position:relative;z-index:2}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--navy);min-height:100vh;
+ background:radial-gradient(120% 60% at 50% 0%,#ffffff 0%,rgba(255,255,255,0) 60%),linear-gradient(180deg,#eef9ff 0%,#dcf1fd 50%,#c6e8fb 100%);
+ overflow-x:hidden;position:relative;-webkit-font-smoothing:antialiased}
+a{-webkit-tap-highlight-color:transparent}
+.wrap{max-width:460px;margin:0 auto;padding:22px 18px 0;position:relative;z-index:2}
 header{text-align:center}
-.logo{width:116px;height:116px;border-radius:50%;background:url(img/logo_circle.png) center/cover;margin:0 auto;border:5px solid #fff;box-shadow:0 10px 30px rgba(47,143,214,.35)}
-h1{font-weight:900;font-size:32px;margin-top:12px;letter-spacing:.2px}
-.tag{font-weight:700;font-size:15.5px;color:#2b6a9c;margin-top:4px;line-height:1.45}
-.social{display:flex;justify-content:center;gap:12px;margin-top:16px}
-.social a{width:44px;height:44px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 4px 12px rgba(47,143,214,.22)}
-.social svg{width:22px;height:22px;fill:var(--blue)}
-.hero{margin-top:22px;border-radius:24px;overflow:hidden;line-height:0;background:#7cc6f3;box-shadow:0 10px 26px rgba(47,143,214,.25)}
-.hero img{display:block;width:100%;height:auto;position:static;filter:none}
+.logo{width:88px;height:88px;border-radius:50%;margin:0 auto;display:block;border:4px solid #fff;box-shadow:0 6px 20px rgba(47,143,214,.22)}
+h1{font-weight:800;font-size:30px;letter-spacing:-.5px;margin-top:10px;line-height:1.1}
+.tag{font-weight:600;font-size:15px;color:var(--navy2);margin-top:6px;line-height:1.4}
+.sub{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:2px 6px;margin-top:10px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.75);
+ border:1px solid rgba(47,143,214,.14);font-size:12.5px;font-weight:700;color:var(--navy2);line-height:1.35}
+.sub i{font-style:normal;color:#9cc3e2}
+.tag span,.sub span{white-space:nowrap}
+@media(max-width:440px){.sub{flex-direction:column;border-radius:16px;padding:7px 16px}.sub i{display:none}}
+.hero{margin-top:16px;border-radius:24px;overflow:hidden;line-height:0;background:#7cc6f3;box-shadow:var(--sh);aspect-ratio:1260/960}
+.hero img{display:block;width:100%;height:100%;object-fit:cover}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.links{margin-top:20px;display:flex;flex-direction:column;gap:11px}
-.btn{display:flex;align-items:center;gap:13px;background:#fff;border-radius:18px;padding:9px 14px 9px 9px;text-decoration:none;color:var(--navy);box-shadow:0 5px 16px rgba(47,143,214,.18);transition:transform .15s}
+.cta{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.cta a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:60px;border-radius:18px;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:-.1px;transition:transform .15s,box-shadow .15s}
+.cta a:active{transform:scale(.98)}
+.cta .pri{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,#0f2f52 0%,#1f5f9a 55%,#2f8fd6 100%);box-shadow:0 8px 22px rgba(15,47,82,.25);min-height:64px;font-size:18px}
+.cta .pri::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-100%);animation:shine 4.5s ease-in-out 1.2s infinite}
+@keyframes shine{0%,70%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.cta .pri small,.cta .sec small{display:block;font-size:12px;font-weight:600;opacity:.8;margin-top:1px}
+.cta .pri span,.cta .sec span{text-align:center;line-height:1.2}
+.cta .sec{background:#fff;color:var(--navy);border:1.5px solid rgba(47,143,214,.35);box-shadow:var(--sh)}
+.social{display:flex;justify-content:center;gap:14px;margin-top:16px}
+.social a{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.85);display:grid;place-items:center;box-shadow:var(--sh);border:1px solid rgba(47,143,214,.12)}
+.social svg{width:20px;height:20px;fill:var(--navy2)}
+.perks{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 6px;border-radius:var(--r);background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.9)}
+.perk{text-align:center;font-size:11.5px;font-weight:700;color:var(--navy2);line-height:1.25}
+.perk svg{display:block;margin:0 auto 5px;width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.links{margin-top:18px;display:flex;flex-direction:column;gap:10px}
+.btn{display:flex;align-items:center;gap:12px;background:#fff;border-radius:var(--r);min-height:64px;padding:8px 14px 8px 8px;text-decoration:none;color:var(--navy);box-shadow:var(--sh);transition:transform .15s}
 .btn:active{transform:scale(.98)}
-.btn img{width:52px;height:52px;border-radius:13px;flex:none}
-.btn .t{font-weight:800;font-size:16.5px;line-height:1.2}
-.btn .u{font-weight:600;font-size:13px;color:#5b87ab}
-.btn .ar{margin-left:auto;font-weight:900;color:var(--cel);font-size:20px}
-.btn.main{background:linear-gradient(135deg,#3a9be0,#62b9f0);color:#fff}
-.btn.main .u{color:#e3f4ff}.btn.main .ar{color:#fff}
+.btn img{width:48px;height:48px;border-radius:13px;flex:none}
+.btn .t{font-weight:700;font-size:15.5px;line-height:1.25}
+.btn .u{font-weight:600;font-size:12.5px;color:var(--muted)}
+.btn .ar{margin-left:auto;width:28px;height:28px;border-radius:50%;background:var(--cel2);color:var(--blue);display:grid;place-items:center;font-weight:800;font-size:16px;flex:none;transition:transform .2s}
 details.btn{display:block;padding:0}
-details summary{display:flex;align-items:center;gap:13px;padding:9px 14px 9px 9px;cursor:pointer;list-style:none}
+details summary{display:flex;align-items:center;gap:12px;min-height:64px;padding:8px 14px 8px 8px;cursor:pointer;list-style:none}
 details summary::-webkit-details-marker{display:none}
 details[open] .ar{transform:rotate(90deg)}
-.info{padding:2px 18px 16px 74px;font-size:14.5px;font-weight:600;line-height:1.5;color:#2b5578}
-.info b{color:var(--navy);font-weight:800}
+.info{padding:4px 18px 16px 68px;font-size:14px;font-weight:500;line-height:1.55;color:#2b5578}
+.info b{color:var(--navy);font-weight:700}
 .info p+p{margin-top:8px}
-.info .iban{word-break:break-all;font-weight:800;color:var(--navy);letter-spacing:.2px}
+.info .iban{word-break:break-all;font-weight:700;color:var(--navy);letter-spacing:.2px}
 #envios{scroll-margin-top:16px}
 .cats{margin-top:26px}
-.cats h3{font-size:18px;font-weight:900;text-align:center}
+.cats h3{font-size:17px;font-weight:800;text-align:center;letter-spacing:-.2px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-.cat{background:rgba(255,255,255,.85);border-radius:18px;text-decoration:none;color:var(--navy);text-align:center;padding:10px 6px 10px;box-shadow:0 4px 12px rgba(47,143,214,.15)}
+.cat{background:rgba(255,255,255,.9);border-radius:18px;text-decoration:none;color:var(--navy);text-align:center;padding:10px 6px 11px;box-shadow:var(--sh);min-height:48px}
 .cat .ph{height:66px;display:grid;place-items:center}
-.cat img{max-width:78px;max-height:62px;filter:drop-shadow(0 4px 5px rgba(18,57,94,.2))}
-.cat span{display:block;font-weight:800;font-size:13px;margin-top:4px;line-height:1.15}
-footer{position:relative;margin-top:40px;color:#fff;text-align:center;z-index:2}
-footer svg.w{display:block;width:100%;height:46px}
-footer .in{background:#3a9be0;padding:6px 18px 26px}
-footer img{width:96px}
-footer p{font-size:13px;font-weight:700;margin-top:8px;opacity:.95}
-.side{position:absolute;z-index:1;filter:drop-shadow(0 0 22px rgba(255,255,255,.9)) drop-shadow(0 14px 16px rgba(18,57,94,.22));display:none}
+.cat img{max-width:78px;max-height:62px;width:auto;height:auto;filter:drop-shadow(0 4px 5px rgba(18,57,94,.18))}
+.cat span{display:block;font-weight:700;font-size:12.5px;margin-top:5px;line-height:1.2}
+footer{position:relative;margin-top:36px;color:#fff;text-align:center;z-index:2}
+footer svg.w{display:block;width:100%;height:40px}
+footer .in{background:#1f5f9a;padding:4px 18px calc(24px + env(safe-area-inset-bottom))}
+footer img{width:84px;height:auto}
+footer p{font-size:12.5px;font-weight:600;margin-top:6px;opacity:.9}
+.side{position:absolute;z-index:1;filter:drop-shadow(0 0 22px rgba(255,255,255,.9)) drop-shadow(0 14px 16px rgba(18,57,94,.18));display:none}
 @media(min-width:1000px){.side{display:block}}
+@media(hover:hover){.btn:hover,.cat:hover{transform:translateY(-2px)}.cta a:hover{transform:translateY(-1px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
-<img class="side" src="img/lego_pokemon_pikachu.webp" alt="" style="width:300px;left:7%;top:90px;transform:rotate(-6deg)">
-<img class="side" src="img/microscopio.webp" alt="" style="width:230px;left:15%;top:470px;transform:rotate(5deg)">
-<img class="side" src="img/camara_instantanea_rosada.webp" alt="" style="width:270px;right:8%;top:110px;transform:rotate(7deg)">
-<img class="side" src="img/crunchinator.webp" alt="" style="width:290px;right:12%;top:470px;transform:rotate(-5deg)">
+<img class="side" loading="lazy" src="img/opt/lego_pokemon_pikachu.webp" alt="" style="width:300px;left:7%;top:90px;transform:rotate(-6deg)">
+<img class="side" loading="lazy" src="img/opt/microscopio.webp" alt="" style="width:230px;left:15%;top:470px;transform:rotate(5deg)">
+<img class="side" loading="lazy" src="img/opt/camara_instantanea_rosada-lg.webp" alt="" style="width:270px;right:8%;top:110px;transform:rotate(7deg)">
+<img class="side" loading="lazy" src="img/opt/crunchinator-lg.webp" alt="" style="width:290px;right:12%;top:470px;transform:rotate(-5deg)">
 <div class="wrap">
 <header>
- <div class="logo" role="img" aria-label="Logo de Giftify"></div>
+ <img class="logo" src="img/logo_circle.png" width="88" height="88" alt="Logo de Giftify">
  <h1>Giftify</h1>
- <p class="tag">Juguetes novedosos y en tendencia 🎁<br>Envíos a todo el país 🇨🇷</p>
- <nav class="social">
-  <a href="https://wa.me/50662447946" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg></a>
-  <a href="https://www.instagram.com/giftify.cr/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a>
-  <a href="https://www.facebook.com/profile.php?id=61551996533271" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.4H7.4v3.2h2.8V22h3.3Z"/></svg></a>
-  <a href="https://www.tiktok.com/@giftify.cr" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.5 2h3.2c.2 2.3 1.8 4 4.1 4.2v3.2c-1.5 0-2.9-.5-4.1-1.3v6.4a5.6 5.6 0 1 1-5.6-5.6h.6v3.3h-.6a2.3 2.3 0 1 0 2.4 2.3V2Z"/></svg></a>
- </nav>
+ <p class="tag"><span>Regalos que sorprenden.</span> <span>Diversión que enamora. 🎁</span></p>
+ <p class="sub"><span>Juguetes originales de USA 🇺🇸</span><i>|</i><span>Envíos a toda Costa Rica 🇨🇷</span></p>
 </header>
 
 <section class="hero" aria-label="Novedades">
  <h2 class="sr-only">¡Diversión nivel WOW!</h2>
- <img src="img/banner.webp" width="1260" height="960" alt="¡Diversión nivel WOW! En tendencia: cámara instantánea, LEGO Pokémon Pikachu y CrunchLabs Crunchinator">
+ <img src="img/opt/banner-720.webp" srcset="img/opt/banner-720.webp 720w, img/opt/banner-960.webp 960w, img/banner.webp 1260w" sizes="(max-width:480px) 92vw, 440px" width="1260" height="960" fetchpriority="high" decoding="async" alt="¡Diversión nivel WOW! En tendencia: cámara instantánea, LEGO Pokémon Pikachu y CrunchLabs Crunchinator">
+</section>
+
+<nav class="cta" aria-label="Acciones principales">
+ <a class="pri" href="https://wa.me/c/50662447946"><span>🛍️ Explora nuestro catálogo</span></a>
+ <a class="sec" href="https://wa.me/50662447946?text=%C2%A1Hola%20Giftify!%20%F0%9F%8E%81%20Quiero%20informaci%C3%B3n%20de%20un%20juguete"><span>💬 Haz tu pedido por WhatsApp</span></a>
+</nav>
+
+<nav class="social" aria-label="Redes sociales">
+ <a href="https://www.instagram.com/giftify.cr/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a>
+ <a href="https://www.facebook.com/profile.php?id=61551996533271" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.4H7.4v3.2h2.8V22h3.3Z"/></svg></a>
+ <a href="https://www.tiktok.com/@giftify.cr" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.5 2h3.2c.2 2.3 1.8 4 4.1 4.2v3.2c-1.5 0-2.9-.5-4.1-1.3v6.4a5.6 5.6 0 1 1-5.6-5.6h.6v3.3h-.6a2.3 2.3 0 1 0 2.4 2.3V2Z"/></svg></a>
+</nav>
+
+<section class="perks" aria-label="Beneficios">
+ <div class="perk"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 2.1 3.2-.2.6 3.1 2.6 1.9-1.3 2.9 1.3 2.9-2.6 1.9-.6 3.1-3.2-.2L12 22l-2.4-2.1-3.2.2-.6-3.1-2.6-1.9 1.3-2.9-1.3-2.9 2.6-1.9.6-3.1 3.2.2z"/><path d="M8.5 12l2.4 2.4 4.6-4.8"/></svg>Productos originales</div>
+ <div class="perk"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Envíos nacionales</div>
+ <div class="perk"><svg viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1z"/></svg>Atención personalizada</div>
 </section>
 
 <main class="links">
- <a class="btn main" href="https://giftifycr.com"><img src="img/01_tienda_online.png" alt=""><div><div class="t">Nuestra tienda 🛍️</div><div class="u">giftifycr.com</div></div><span class="ar">›</span></a>
- <a class="btn" href="https://wa.me/50662447946?text=%C2%A1Hola%20Giftify!%20%F0%9F%8E%81%20Quiero%20informaci%C3%B3n%20de%20un%20juguete"><img src="img/02_whatsapp.png" alt=""><div><div class="t">Escribinos por WhatsApp 💬</div><div class="u">6244-7946</div></div><span class="ar">›</span></a>
- <a class="btn" href="https://wa.me/c/50662447946"><img src="img/03_catalogo_whatsapp.png" alt=""><div><div class="t">Mirá el catálogo 📲</div><div class="u">Catálogo de WhatsApp</div></div><span class="ar">›</span></a>
- <details class="btn" id="envios"><summary><img src="img/04_envios_y_pagos.png" alt=""><div><div class="t">Envíos y pagos 🚚</div><div class="u">Tocá para ver los detalles</div></div><span class="ar">›</span></summary>
+ <a class="btn" href="https://giftifycr.com"><img src="img/opt/01_tienda_online.webp" width="48" height="48" alt=""><div><div class="t">Nuestra tienda 🛍️</div><div class="u">giftifycr.com</div></div><span class="ar">›</span></a>
+ <details class="btn" id="envios"><summary><img src="img/opt/04_envios_y_pagos.webp" width="48" height="48" alt=""><div><div class="t">Envíos y pagos 🚚</div><div class="u">Tocá para ver los detalles</div></div><span class="ar">›</span></summary>
   <div class="info">
    <p><b>Envíos:</b> por Correos de Costa Rica. GAM ₡2.500, resto del país ₡3.000.</p>
    <p><b>Pagos:</b> SINPE Móvil al 6244-7946 o transferencia BAC, titular Peekaboo SRL.</p>
    <p><b>IBAN:</b> <span class="iban">CR89010200009581786184</span></p>
    <p>¿Dudas? Escribinos por WhatsApp y te ayudamos 💙</p>
   </div></details>
- <a class="btn" href="https://www.facebook.com/profile.php?id=61551996533271"><img src="img/05_facebook.png" alt=""><div><div class="t">Seguinos en Facebook 👍</div><div class="u">Giftify</div></div><span class="ar">›</span></a>
- <a class="btn" href="https://www.tiktok.com/@giftify.cr"><img src="img/06_tiktok.png" alt=""><div><div class="t">Videos en TikTok 🎵</div><div class="u">@giftify.cr</div></div><span class="ar">›</span></a>
 </main>
 
 <section class="cats">
  <h3>Explorá por categoría</h3>
  <div class="grid">
-  <a class="cat" href="https://giftifycr.com/search?q=lego&type=product"><div class="ph"><img src="img/lego_gameboy.webp" alt=""></div><span>LEGO</span></a>
-  <a class="cat" href="https://giftifycr.com/search?q=crunchlabs&type=product"><div class="ph"><img src="img/crunchinator.webp" alt=""></div><span>Ciencia y STEM</span></a>
-  <a class="cat" href="https://giftifycr.com/search?q=c%C3%A1mara&type=product"><div class="ph"><img src="img/camara_instantanea_rosada.webp" alt=""></div><span>Cámaras</span></a>
-  <a class="cat" href="https://giftifycr.com/search?q=juego&type=product"><div class="ph"><img src="img/crossfire.webp" alt=""></div><span>Juegos</span></a>
-  <a class="cat" href="https://giftifycr.com/search?q=magic&type=product"><div class="ph"><img src="img/jellykins.webp" alt=""></div><span>Peluches y Magic Mixies</span></a>
-  <a class="cat" href="https://giftifycr.com/search?q=mrbeast&type=product"><div class="ph"><img src="img/mrbeast_azul.webp" alt=""></div><span>Figuras</span></a>
+  <a class="cat" href="https://giftifycr.com/search?q=lego&type=product"><div class="ph"><img loading="lazy" src="img/opt/lego_gameboy.webp" alt=""></div><span>LEGO</span></a>
+  <a class="cat" href="https://giftifycr.com/search?q=crunchlabs&type=product"><div class="ph"><img loading="lazy" src="img/opt/crunchinator.webp" alt=""></div><span>Ciencia y STEM</span></a>
+  <a class="cat" href="https://giftifycr.com/search?q=c%C3%A1mara&type=product"><div class="ph"><img loading="lazy" src="img/opt/camara_instantanea_rosada.webp" alt=""></div><span>Cámaras</span></a>
+  <a class="cat" href="https://giftifycr.com/search?q=juego&type=product"><div class="ph"><img loading="lazy" src="img/opt/crossfire.webp" alt=""></div><span>Juegos</span></a>
+  <a class="cat" href="https://giftifycr.com/search?q=magic&type=product"><div class="ph"><img loading="lazy" src="img/opt/jellykins.webp" alt=""></div><span>Peluches y Magic Mixies</span></a>
+  <a class="cat" href="https://giftifycr.com/search?q=mrbeast&type=product"><div class="ph"><img loading="lazy" src="img/opt/mrbeast_azul.webp" alt=""></div><span>Figuras</span></a>
  </div>
 </section>
 </div>
 <footer>
- <svg class="w" viewBox="0 0 400 46" preserveAspectRatio="none"><path d="M0 24 C70 4 130 44 200 24 S330 4 400 24 V46 H0Z" fill="#3a9be0"/></svg>
- <div class="in"><img src="img/logo_white.png" alt="Giftify"><p>Costa Rica · © 2026 Giftify</p></div>
+ <svg class="w" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 20 C70 2 130 38 200 20 S330 2 400 20 V40 H0Z" fill="#1f5f9a"/></svg>
+ <div class="in"><img loading="lazy" src="img/opt/logo_white.png" width="84" height="75" alt="Giftify"><p>Costa Rica · © 2026 Giftify</p></div>
 </footer>
 <script>
 (function(){
@@ -115,9 +147,7 @@ footer p{font-size:13px;font-weight:700;margin-top:8px;opacity:.95}
     var el=document.getElementById('envios');
     if(!el) return;
     el.open=true;
-    requestAnimationFrame(function(){
-      el.scrollIntoView({behavior:'smooth',block:'start'});
-    });
+    requestAnimationFrame(function(){el.scrollIntoView({behavior:'smooth',block:'start'});});
   }
   openEnvios();
   window.addEventListener('hashchange',openEnvios);
